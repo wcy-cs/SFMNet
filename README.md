@@ -3,6 +3,8 @@
 
 ## Pretrained Model
  [BaiDu]( https://pan.baidu.com/s/123BQyzubi4C5eDVA87ucDw) passward:en47
+## Requirement
+Torch 1.11.0 Cuda 11.4 
 ## Train 
 Train PSNR-oriented model:
 ```Python
