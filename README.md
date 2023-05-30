@@ -1,4 +1,4 @@
-Spatial-Frequency Mutual Learning for Face Super-Resolution
+# Spatial-Frequency Mutual Learning for Face Super-Resolution
 
 
 ## Pretrained Model
