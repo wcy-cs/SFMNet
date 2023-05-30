@@ -1,5 +1,5 @@
 # Spatial-Frequency Mutual Learning for Face Super-Resolution
-
+![image](https://github.com/wcy-cs/SFMNet/blob/main/thum.png)
 
 ## Pretrained Model
  [BaiDu]( https://pan.baidu.com/s/123BQyzubi4C5eDVA87ucDw) passward:en47
