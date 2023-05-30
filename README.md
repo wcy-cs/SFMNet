@@ -10,7 +10,7 @@ python main_two.py --data_path data_path  --writer_name mynet --scale scale --mo
 ```
 Train GAN-based model:
 ```Python
-python main_GAN.py --load pretrained_PSNR_model --model MYNMET --scale 8 --data_path data_path  --writer_name mynetgan
+python main_GAN.py --load pretrained_PSNR_model --model MYNET --scale 8 --data_path data_path  --writer_name mynetgan
 ```
 ## Test
 ```Python
