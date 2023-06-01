@@ -2,7 +2,7 @@
 ![image](https://github.com/wcy-cs/SFMNet/blob/main/network.png)
 
 ## Pretrained Model
- [BaiDu]( https://pan.baidu.com/s/123BQyzubi4C5eDVA87ucDw) passward:en47
+ [BaiDu]( https://pan.baidu.com/s/123BQyzubi4C5eDVA87ucDw) passward:en47, [Google Drive](https://drive.google.com/drive/folders/1yWmKxA8d2xSAopJzhtZvOEwCyJ2MxakU?usp=sharing)
 ## Requirement
 Pytorch 1.11.0 Cuda 11.4 
 ## Train 
