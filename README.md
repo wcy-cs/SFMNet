@@ -18,6 +18,9 @@ python main_GAN.py --load pretrained_PSNR_model --model MYNET --scale 8 --data_p
 ```Python
 python test.py --model MYNET --load pretrained_model_path  --data_path data_path --save_name name
 ```
+
+## Test dataset
+[BaiDu](https://pan.baidu.com/s/1HAj03oLERgzYeEDT3y5B4w) passward:v2uf
 ## Citation 
 ```
 @InProceedings{Wang_2023_CVPR,
