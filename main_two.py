@@ -27,9 +27,9 @@ valdata = dataset.Data(root=os.path.join(args.data_path,'CelebA/val'), args=args
 testdata1 = dataset.Data(root=os.path.join(args.data_path,'CelebA/test'), args=args, train=False)
 testdata2 = dataset.Data(root=os.path.join(args.data_path,'helen/test'), args=args, train=False)
 trainset = DataLoader(traindata, batch_size=args.batch_size, shuffle=True, num_workers=32)
-valset = DataLoader(valdata, batch_size=args.batch_size, shuffle=False, num_workers=1)
-testset1 = DataLoader(testdata1, batch_size=args.batch_size, shuffle=False, num_workers=1)
-testset2 = DataLoader(testdata2, batch_size=args.batch_size, shuffle=False, num_workers=1)
+valset = DataLoader(valdata, batch_size=1, shuffle=False, num_workers=1)
+testset1 = DataLoader(testdata1, batch_size=1, shuffle=False, num_workers=1)
+testset2 = DataLoader(testdata2, batch_size=1, shuffle=False, num_workers=1)
 
 
 class AMPLoss(nn.Module):
@@ -79,9 +79,6 @@ def eval_model(model, dataset, name, epoch, args):
         psnr_c, ssim_c = torch_psnr(data['img_gt'], sr['img_out'])
         val_psnr_dic = val_psnr_dic + psnr_c
         val_ssim_dic = val_ssim_dic + ssim_c
-        torchvision.utils.save_image(sr[0],
-                         os.path.join(args.save_path, args.writer_name, 'result', '{}'.format(str(filename[0]))))
-    # # print(len(valset))
     print("Epoch：{}, {}, psnr: {:.3f}".format(epoch+1, name, val_psnr_dic/(len(dataset))))
     print('Forward: {:.2f}s\n'.format(timer_test.toc()))
     writer.add_scalar("{}_psnr_DIC".format(name), val_psnr_dic/len(dataset), epoch)
