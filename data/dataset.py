@@ -43,6 +43,7 @@ class Data(data.Dataset):
 
         LR = Image.open(img_path_LR)
         HR = Image.open(img_path_HR)
+        LR = LR.resize((128, 128), resample=Image.BICUBIC)
 
         HR = np.array(HR)
         LR = np.array(LR)
